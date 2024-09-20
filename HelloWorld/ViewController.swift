@@ -15,12 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet var nextButton: UIButton!
     var counter = 0
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.layer.cornerRadius = 20
-        redLens.layer.cornerRadius = 30
-        yellowLens.layer.cornerRadius = 30
-        greenLens.layer.cornerRadius = 30
+        redLens.layer.cornerRadius = 50
+        yellowLens.layer.cornerRadius = 50
+        greenLens.layer.cornerRadius = 50
         redLens.alpha = 0.3
         yellowLens.alpha = 0.3
         greenLens.alpha = 0.3
@@ -41,7 +42,7 @@ class ViewController: UIViewController {
             greenLens.alpha = 1
             counter = 0
         default:
-            counter = 0
+            break
         }
     }
 }
